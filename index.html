@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Online Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>🍔 FoodHub</h1>
+        <div class="cart-info">
+            <h3>🛒 Cart: <span id="cartCount">0</span></h3>
+            <h3>💰 Total: ₹<span id="totalAmount">0</span></h3>
+        </div>
+    </div>
+
+    <section class="hero">
+        <h2 class="search-title">Search for tasty items</h2>
+        <div class="orange-line"></div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for tasty items..."
+            >
+            <button onclick="searchFood()">Search</button>
+        </div>
+
+        <div class="categories">
+            <button class="active-btn" onclick="loadFoods('a')">All</button>
+            <button onclick="loadFoods('Chicken')">Chicken</button>
+            <button onclick="loadFoods('Beef')">Beef</button>
+            <button onclick="loadFoods('Seafood')">Seafood</button>
+            <button onclick="loadFoods('Fish')">Fish</button>
+            <button onclick="loadFoods('Egg')">Egg</button>
+            <button onclick="loadFoods('Pizza')">Egg</button>
+        </div>
+    </section>
+
+    <div id="foodContainer"></div>
+
+    <footer>
+        <p>© 2026 FoodHub | Online Food Ordering System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
